@@ -26,44 +26,81 @@
         и нажать Alt + Enter, чтобы загрузить этот файл в вашу библиотеку.-->
 
 </head>
-<body>
-
-
-    <div class="container">
+<body style="height:100%; background-color: dimgray">
+    <div class="container-fluid" style="height:100px; width:66.5%; background-color: #7a5a83">
         <div class="row">
-            <div class="col-sm-2" style="background-color: aqua">
-                Одна из трёх колонок
+            <div class="col-md-4 col-xs-4 col-sm-4 col-xs-4">
+                <img src="{% static 'image/logo-fayno.png' %}" class="img-responsive" style="width: 100%; margin: 15px;
+                padding: 15px">
+            </div><!--class img-responsive - ставит картинку в пределы нашего дива-->
+            <div class="col-md-3 col-xs-3 col-sm-3 col-xs-3" >
+                <img src="{% static 'image/logo-fayno2-2.png' %}" class="" style="width: 100%; margin: 33px;padding: 10px; margin-left: 5px">
             </div>
-            <div class="col-sm-2" style="background-color: red">
-                Одна из трёх колонок
+            <div class="col-md-1 col-xs-1 col-sm-1 col-xs-1">
+                <img src="{% static 'image/Phone.png' %}" class="img-responsive" style="width: 32px; margin: 33px; margin-left: 2px">
             </div>
-            <div class="col-sm-2" style="background-color: green">
-                Одна из трёх колонок
+            <div class="col-md-1 col-xs-2 col-sm-2 col-xs-2">
+                <p style="color: white; font-size: 14px; width: 150px; margin: 30px;padding: 10px;  margin-left: -70px">+38 (066) 994 20 94</p>
             </div>
-                <div class="row">
-                    <div class="col-sm-6" style="background-color: grey">бр</div></br>
-                    <div class="col-sm-6" style="background-color: green">гг</div>
-                    <div class="col-sm-6" style="background-color: goldenrod">бб</div>
-                </div>
+            <div class="col-md-1 col-xs-1 col-sm-1 col-xs-1">
+                 <button type="button" style="width: 43px; margin: 30px; margin-left: 37px; border: none;
+                    background: transparent; ">
+                     <img  src="{% static 'image/categories-icon.png' %}">
+                 </button>
+            </div>
+            <div class="col-md-1 col-xs-1 col-sm-1 col-xs-1">
+                <a href="https://www.facebook.com/faynoohayno/">
+                    <img src="{% static 'image/facebook-icon.png' %}" class="image-responsive" style="width: 33px; margin: 33px; margin-left: 35px"></a>
+            </div>
+            <div class="col-md-1 col-xs-1 col-sm-1 col-xs-1">
+                <a href="https://www.instagram.com/fayno_ohayno/">
+                    <img src="{% static 'image/instagram-icon.png' %}" class="image-responsive" style="width: 33px; margin: 33px; margin-left: -30px">
+                </a>
+            </div>
         </div>
-    </div></br>
-
-    <div class="container-fluid" style="background-color: lightgrey">
-        <h1>Создал контейнер в блоке</h1>
-        <p1>Текст в теге р1</p1><br/>
-        <p1>Чем больше тегов, тем больше растягивается контайнер</p1><br/>
-
-
-
-        <!-- Система сеток (Greed-System) -->
-
-        <!-- xs - extra small - для смартфонов -->
-        <!-- sm - small - для планшетов -->
-        <!-- md - midle - для небольших ноутбуков -->
-        <!-- xs - large - для больших екранов -->
-
+        </div>
     </div>
 
+    <div class="container" style="height:100%; width:68%; margin: 0 auto;">  <!--margin - отступ от преведущего div-->
+        <div class="row">
+            <div class="col-md-12" >
+                <img src="{% static 'image/1ab89c8s-960.jpg' %}" class="img-responsive" style="width: 1300px; height: 100%; display: block;
+                margin: 0 auto;">
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="margin-left:318.5px; margin-right: 30px; position: static;height:100%; width:66.5%;">
+        <div class="row" style="background-color: white">
+            <div class="col-md-7" style="font-size: 16px; padding-left: 60px; font-family:'Times New Roman', Times, serif;">
+                <p></br></br>Салон красоты по адресу ул. Амвросия Бучмы, 6 A –
+                    первый салон сети семейных салонов красоты «Файно-Охайно».</p></br>
+                <p>Философия наших заведений отражает идею того, что красота не требует жертв и много времени,
+                    поэтому своим клиентам мы предлагаем отличное качество услуг по честной цене. В «Файно-Охайно»
+                    особое внимание акцентируем на безупречный сервис, профессионализм специалистов и
+                    качество выполняемых услуг.
+                </p></br>
+                <p>Мы предлагаем широкий спектр: парикмахерских, косметологических услуг, ногтевого сервиса, массажных техник,
+                    депиляции, шугаринг, визаж, прокол ушей, работа с бровями и ресничками.</p></br>
+                <p>Заботимся о Вас с особым вниманием и любовью!</p></br>
+                <p>Ваша сеть салонов красоты «Файно-охайно».</p></br>
+            </div>
+            <div class="col-md-5" style="text-align: center; display: block; margin:170px auto;">
+                    <div class="col-md-2">
+                        <img src="{% static 'image/mts-icon.png' %}" class="image-responsive" style="width: 32px; margin: 18px; margin-left: 125px">
+                        <img src="{% static 'image/kievstar-icon.png' %}" class="image-responsive" style="width: 32px; margin: -5px; margin-left: 125px">
+                    </div>
+                    <div class="col-md-10">
+                        <h1 style="font-size: 23px; color: darkolivegreen">+38 (066) 994 20 94</h1>
+                        <h1 style="font-size: 23px; color: darkolivegreen">+38 (097) 032 77 42</h1>
+                        <button type="button" style="width: 68%; margin: 0; padding: 0; margin-left: -32px; border: none;
+                           background: transparent;">
+                            <img src="{% static 'image/submit2_1.png' %}">
+                        </button>
+                    </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
 

@@ -1,0 +1,7 @@
+.widget-facebook {
+  height: 500px;
+}
+
+.widget-facebook .facebook_iframe {
+  border: none;
+}
