@@ -9,7 +9,7 @@
     <title>"Файно Охайнo" - Сеть салонов красоты Киев, левый берег, Березняки</title>
 
     <!-- отображает значек на вкладке свйта -->
-    <link rel="shortcut icon" href="{% static 'image/favicon.png' %}" type="image/png"/>
+    <link rel="shortcut icon" href="{% static 'image/favicon.png' %}" type="image/png"/> <!--Какртинка для title-->
 
     <link rel="stylesheet" href="{% static "style.css" %}">
 
@@ -26,53 +26,73 @@
         и нажать Alt + Enter, чтобы загрузить этот файл в вашу библиотеку.-->
 
 </head>
-<body style="height:100%; background-color: dimgray">
-    <div class="container-fluid" style="height:100px; width:66.5%; background-color: #7a5a83">
+
+<body class="body" style="">
+    <div class="container" style="height:100px; width:66.3%; background-color: #785A84;">
         <div class="row">
-            <div class="col-md-4 col-xs-4 col-sm-4 col-xs-4">
-                <img src="{% static 'image/logo-fayno.png' %}" class="img-responsive" style="width: 100%; margin: 15px;
-                padding: 15px">
-            </div><!--class img-responsive - ставит картинку в пределы нашего дива-->
-            <div class="col-md-3 col-xs-3 col-sm-3 col-xs-3" >
-                <img src="{% static 'image/logo-fayno2-2.png' %}" class="" style="width: 100%; margin: 33px;padding: 10px; margin-left: 5px">
+            <div class="col-md-4 col-xs-4 col-sm-4 col-lg-4" style="">
+                <img src="{% static 'image/logo-fayno.png' %}" class="logo" >
             </div>
-            <div class="col-md-1 col-xs-1 col-sm-1 col-xs-1">
-                <img src="{% static 'image/Phone.png' %}" class="img-responsive" style="width: 32px; margin: 33px; margin-left: 2px">
+            <div class="col-md-3 col-xs-3 col-sm-3 col-lg-3" style="">
+                <img src="{% static 'image/logo-fayno2-2.png' %}" class="logo2" style="">
             </div>
-            <div class="col-md-1 col-xs-2 col-sm-2 col-xs-2">
-                <p style="color: white; font-size: 14px; width: 150px; margin: 30px;padding: 10px;  margin-left: -70px">+38 (066) 994 20 94</p>
+            <div class="col-md-1 col-xs-1 col-sm-1 col-lg-1" style="">
+                <img src="{% static 'image/Phone.png' %}" class="phonelogo" >
             </div>
-            <div class="col-md-1 col-xs-1 col-sm-1 col-xs-1">
-                 <button type="button" style="width: 43px; margin: 30px; margin-left: 37px; border: none;
-                    background: transparent; ">
-                     <img  src="{% static 'image/categories-icon.png' %}">
-                 </button>
+            <div class="col-md-1 col-xs-1 col-sm-1 col-lg-1" style="">
+                <p class="phonelogonumber">+38 (066) 994 20 94</p>
             </div>
-            <div class="col-md-1 col-xs-1 col-sm-1 col-xs-1">
+
+            <!-- Всплювающее меню -->
+            <div class="col-md-1 col-xs-1 col-sm-1 col-lg-1"  style="">
+                <div id="nav">
+                   <ul>
+                       <li>
+                          <img class="categories" src="{% static 'image/categories-icon.png' %}">
+                            <div >
+                                <ul></br></br>
+                                    <li><a id = "color" href="#top">ЖЕНСКИЙ ЗАЛ</a></li></br>
+                                    <li><a id = "color" href="#">МУЖСКОЙ ЗАЛ</a></li></br>
+                                    <li><a id = "color" href="#">ДЕТСКИЙ ЗАЛ</a></li></br>
+                                    <li><a id = "color" href="#">МАНЕКЮР / ПЕДИКЮР</a></li></br>
+                                    <li><a id = "color" href="#">БРОВИ И РЕСНИЧКИ</a></li>v
+                                    <li><a id = "color" href="#">КОСМЕТОЛОГИЯ</a></li></br>
+                                    <li><a id = "color" href="#">МАССАЖ</a></li></br>
+                                    <li><a id = "color" href="#">ДИПИЛЯЦИЯ</a></li></br>
+                                    <li><a id = "color" href="#">НАШИ РАБОТЫ</a></li></br>
+                                    <li><a id = "color" href="#">КАРТА ПРОЕЗДА</a></li></br>
+                                    <li><a id = "color" href="#">КОНТАКТЫ</a></li></br></br>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Ссылка на Facebook -->
+            <div class="col-md-1 col-xs-1 col-sm-1 col-lg-1" style="">
                 <a href="https://www.facebook.com/faynoohayno/">
-                    <img src="{% static 'image/facebook-icon.png' %}" class="image-responsive" style="width: 33px; margin: 33px; margin-left: 35px"></a>
+                    <img src="{% static 'image/facebook-icon.png' %}" class="image-fluid facebook" style=""></a>
             </div>
-            <div class="col-md-1 col-xs-1 col-sm-1 col-xs-1">
+            <div class="col-md-1 col-xs-1 col-sm-1 col-lg-1" style="">
                 <a href="https://www.instagram.com/fayno_ohayno/">
-                    <img src="{% static 'image/instagram-icon.png' %}" class="image-responsive" style="width: 33px; margin: 33px; margin-left: -30px">
+                    <img src="{% static 'image/instagram-icon.png' %}" class="image-responsive instagram " style="">
                 </a>
             </div>
         </div>
-        </div>
     </div>
 
-    <div class="container" style="height:100%; width:68%; margin: 0 auto;">  <!--margin - отступ от преведущего div-->
+    <div class="container" style="height:100%; width:68%; margin: 0 auto;">
         <div class="row">
-            <div class="col-md-12" >
-                <img src="{% static 'image/1ab89c8s-960.jpg' %}" class="img-responsive" style="width: 1300px; height: 100%; display: block;
-                margin: 0 auto;">
+            <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12" >
+                <img src="{% static 'image/1ab89c8s-960.jpg' %}" class="img-responsive" style="height: 100%; margin: auto;">
             </div>
         </div>
     </div>
 
-    <div class="container" style="margin-left:318.5px; margin-right: 30px; position: static;height:100%; width:66.5%;">
+    <div class="container" style="margin-left:318.5px; margin-right: 30px; position: static; height:100%; width:66.5%;">
         <div class="row" style="background-color: white">
-            <div class="col-md-7" style="font-size: 16px; padding-left: 60px; font-family:'Times New Roman', Times, serif;">
+            <div class="col-md-7 col-xs-7 col-sm-7 col-lg-7" style="font-size: 17px; padding-left: 60px; font-family:'Times New Roman', Times, serif;">
                 <p></br></br>Салон красоты по адресу ул. Амвросия Бучмы, 6 A –
                     первый салон сети семейных салонов красоты «Файно-Охайно».</p></br>
                 <p>Философия наших заведений отражает идею того, что красота не требует жертв и много времени,
@@ -85,19 +105,34 @@
                 <p>Заботимся о Вас с особым вниманием и любовью!</p></br>
                 <p>Ваша сеть салонов красоты «Файно-охайно».</p></br>
             </div>
-            <div class="col-md-5" style="text-align: center; display: block; margin:170px auto;">
-                    <div class="col-md-2">
-                        <img src="{% static 'image/mts-icon.png' %}" class="image-responsive" style="width: 32px; margin: 18px; margin-left: 125px">
-                        <img src="{% static 'image/kievstar-icon.png' %}" class="image-responsive" style="width: 32px; margin: -5px; margin-left: 125px">
-                    </div>
-                    <div class="col-md-10">
-                        <h1 style="font-size: 23px; color: darkolivegreen">+38 (066) 994 20 94</h1>
-                        <h1 style="font-size: 23px; color: darkolivegreen">+38 (097) 032 77 42</h1>
-                        <button type="button" style="width: 68%; margin: 0; padding: 0; margin-left: -32px; border: none;
+            <div class="col-md-5 col-xs-5 col-sm-5 col-lg-5" style="text-align: center; margin: 170px auto;">
+                    <div class="row">
+                        <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                            <img src="{% static 'image/mts-icon.png' %}" class="image-responsive" style="width: 32px; margin: 18px; margin-left: 125px">
+                            <img src="{% static 'image/kievstar-icon.png' %}" class="image-responsive" style="width: 32px; margin: -5px; margin-left: 125px">
+                        </div>
+                        <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                            <h1 style="font-size: 23px; color: darkolivegreen">+38 (066) 994 20 94</h1>
+                            <h1 style="font-size: 23px; color: darkolivegreen">+38 (097) 032 77 42</h1>
+                        <button type="button" style="width: 68%; padding: 0; margin-left: 50px; border: none;
                            background: transparent;">
                             <img src="{% static 'image/submit2_1.png' %}">
                         </button>
+                        </div>
                     </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                <img src="{% static 'image/wemen2.jpg' %}">
+                <a name="top"></a>
+            </div>
+            <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                <p style="background-color: yellow">
+                    текс
+                </p>
             </div>
         </div>
     </div>
