@@ -116,13 +116,22 @@ USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/dev/howto/static-files/
-
-STATIC_URL = '/static/'
+# https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 TEMPLATE_DIRS = (os.path.join(BASE_DIR,  'templates'),)
 
+# тут хранятся статические файлы в папке static которая в корневом каталоне для всего проекта
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
-    '/static/',
 ]
+
+# корень нашей статики, куда будут складыватся вся наша статика после команды (collectstatic) собраная с STATICFILES_DIRS и STATIC_URL для production сайта
+STATIC_ROOT = os.path.join(BASE_DIR, "static_diploy")
+
+STATIC_URL = '/static/' # статические файлы отдельных апликейшенов, css, js, шрифты, потом ещет тут
+
+MEDIA_ROOT = os.path.join(BASE_DIR, "media") # корень медиа, сначала ищет тут, потом в MEDIA_URL (ето media каждлго апликейшена)
+
+MEDIA_URL = '/media/' # тут images каждого апликейшена
+
+

@@ -1,67 +1,86 @@
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html style="height:100%; background-color: #525252;" lang="ru">
 {% load static %}
 
-<head>
+<head style="height:100%; background-color: #525252;">
+
     <meta charset="UTF-8">
     <title>"Файно Охайнo" - Сеть салонов красоты Киев, левый берег, Березняки</title>
 
-    <!-- отображает значек на вкладке свйта -->
-    <link rel="shortcut icon" href="{% static 'image/favicon.png' %}" type="image/png"/> <!--Какртинка для title-->
-
-    <link rel="stylesheet" href="{% static "style.css" %}">
-
         <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-        <!--нужно выбрать эту ссылку (//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js)
-        и нажать Alt + Enter, чтобы загрузить этот файл в вашу библиотеку.-->
+
+        <!-- jquery 2.2.0-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.7.0/d3.min.js"></script>
+
+        <!--footer-->
+
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+
+        <link rel="stylesheet" href="{% static "style/style.css" %}">
+
 
 </head>
 
 <body class="body" style="">
-    <div class="container" style="height:100px; width:66.3%; background-color: #785A84;">
-        <div class="row">
+
+    <div style="height:100px;"></div>
+
+    <div class="container" style="height:100px; background-color: #785A84; top: 0; position: fixed; z-index: 5; left:  20%; right: 20% ">
+        <div style="" class="row">
             <div class="col-md-4 col-xs-4 col-sm-4 col-lg-4" style="">
-                <img src="{% static 'image/logo-fayno.png' %}" class="logo" >
+                <img class="logo" style="" src="{% static 'image/logo-fayno.png' %}"  >
             </div>
-            <div class="col-md-3 col-xs-3 col-sm-3 col-lg-3" style="">
-                <img src="{% static 'image/logo-fayno2-2.png' %}" class="logo2" style="">
+            <div style="" class="col-md-3 col-xs-3 col-sm-3 col-lg-3" >
+                <img class="logo2" style="" src="{% static 'image/logo-fayno2-2.png' %}" >
+            </div>
+            <div style="" class="col-md-1 col-xs-1 col-sm-1 col-lg-1" >
+                <img class="phonelogo" style="" src="{% static 'image/Phone.png' %}">
             </div>
             <div class="col-md-1 col-xs-1 col-sm-1 col-lg-1" style="">
-                <img src="{% static 'image/Phone.png' %}" class="phonelogo" >
-            </div>
-            <div class="col-md-1 col-xs-1 col-sm-1 col-lg-1" style="">
-                <p class="phonelogonumber">+38 (066) 994 20 94</p>
+                <span class="phonelogonumber" style="" >+38 (066) 994 20 94</span>
             </div>
 
             <!-- Всплювающее меню -->
-            <div class="col-md-1 col-xs-1 col-sm-1 col-lg-1"  style="">
+            <div class="col-md-1 col-xs-1 col-sm-1 col-lg-1" style="" >
                 <div id="nav">
                    <ul>
                        <li>
-                          <img class="categories" src="{% static 'image/categories-icon.png' %}">
+                          <img style="" class="categories" src="{% static 'image/categories-icon.png' %}">
                             <div >
-                                <ul></br></br>
-                                    <li><a id = "color" href="#top">ЖЕНСКИЙ ЗАЛ</a></li></br>
-                                    <li><a id = "color" href="#">МУЖСКОЙ ЗАЛ</a></li></br>
-                                    <li><a id = "color" href="#">ДЕТСКИЙ ЗАЛ</a></li></br>
-                                    <li><a id = "color" href="#">МАНЕКЮР / ПЕДИКЮР</a></li></br>
-                                    <li><a id = "color" href="#">БРОВИ И РЕСНИЧКИ</a></li>v
-                                    <li><a id = "color" href="#">КОСМЕТОЛОГИЯ</a></li></br>
-                                    <li><a id = "color" href="#">МАССАЖ</a></li></br>
-                                    <li><a id = "color" href="#">ДИПИЛЯЦИЯ</a></li></br>
-                                    <li><a id = "color" href="#">НАШИ РАБОТЫ</a></li></br>
-                                    <li><a id = "color" href="#">КАРТА ПРОЕЗДА</a></li></br>
-                                    <li><a id = "color" href="#">КОНТАКТЫ</a></li></br></br>
+                                <ul style="top: 70px"></br></br>
+                                    <li><a id = "color" href="#1">ЖЕНСКИЙ ЗАЛ</a></li></br>
+                                    <li><a id = "color" href="#2">МУЖСКОЙ ЗАЛ</a></li></br>
+                                    <li><a id = "color" href="#3">ДЕТСКИЙ ЗАЛ</a></li></br>
+                                    <li><a id = "color" href="#4">МАНЕКЮР / ПЕДИКЮР</a></li></br>
+                                    <li><a id = "color" href="#5">БРОВИ И РЕСНИЧКИ</a></li></br>
+                                    <li><a id = "color" href="#6">КОСМЕТОЛОГИЯ</a></li></br>
+                                    <li><a id = "color" href="#7">МАССАЖ</a></li></br>
+                                    <li><a id = "color" href="#8">ДИПИЛЯЦИЯ</a></li></br>
+                                    <li><a id = "color" href="#9">НАШИ РАБОТЫ</a></li></br>
+                                    <li><a id = "color" href="#10">КАРТА ПРОЕЗДА</a></li></br>
+                                    <li><a id = "color" href="#11">КОНТАКТЫ</a></li></br></br>
                                 </ul>
                             </div>
                         </li>
@@ -72,70 +91,764 @@
             <!-- Ссылка на Facebook -->
             <div class="col-md-1 col-xs-1 col-sm-1 col-lg-1" style="">
                 <a href="https://www.facebook.com/faynoohayno/">
-                    <img src="{% static 'image/facebook-icon.png' %}" class="image-fluid facebook" style=""></a>
+                    <img  class="image-fluid facebook" style="" src="{% static 'image/facebook-icon.png' %}"></a>
             </div>
             <div class="col-md-1 col-xs-1 col-sm-1 col-lg-1" style="">
                 <a href="https://www.instagram.com/fayno_ohayno/">
-                    <img src="{% static 'image/instagram-icon.png' %}" class="image-responsive instagram " style="">
+                    <img style="" class="image-responsive instagram" src="{% static 'image/instagram-icon.png' %}" >
                 </a>
             </div>
         </div>
         </div>
 
-        <div class="container" style="height:100%; width:68%; margin: 0 auto;">
+
+
+        <!-- container 1 -->
+        <div class="container 1" style="">
             <div class="row">
-                <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12" >
-                    <img src="{% static 'image/1ab89c8s-960.jpg' %}" class="img-responsive" style="height: 100%; margin: auto;">
+                <div style="padding: 0" class="col-md-12">
+
+                    <div id="testCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Слайды карусели -->
+                        <div class="carousel-inner">
+                            <!-- Слайд 1 -->
+                            <div style="height: 400px;" class="item active">
+                                <img src="{% static 'image/0.jpg' %}" alt="">
+                            </div>
+                            <!-- Слайд 2 -->
+                            <div style="height: 400px;" class="item">
+                                <img src="{% static 'image/1.jpg' %}" alt="">
+                            </div>
+                            <!-- Слайд 3 -->
+                            <div style="height: 400px;" class="item">
+                                <img src="{% static 'image/2.jpg' %}" alt="">
+                            </div>
+                        </div>
+
+                        <!-- Навигация карусели (следующий или предыдущий слайд) -->
+                        <!-- Кнопка, переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
+                        <a style="left: 10px;top: 150px;" class="left carousel-control" href="#testCarousel" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <!-- Кнопка, переход на следующий слайд с помощью атрибута data-slide="next" -->
+                        <a style="right: 10px;top: 180px;" class="right carousel-control" href="#testCarousel" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+
                 </div>
             </div>
         </div>
 
-        <div class="container" style="margin-left:318.5px; margin-right: 30px; position: static; height:100%; width:66.5%;">
-            <div class="row" style="background-color: white">
-                <div class="col-md-7 col-xs-7 col-sm-7 col-lg-7" style="font-size: 17px; padding-left: 60px; font-family:'Times New Roman', Times, serif;">
-                    <p></br></br>Салон красоты по адресу ул. Амвросия Бучмы, 6 A –
+        <!-- container 1-1 -->
+        <div class="container 1-1" style="">
+            <div class="row" style="">
+
+                <div class="col-md-8 col-xs-8 col-sm-8 col-lg-8" style="padding: 0; ">
+
+                    <div class="text-box" style="background-color: white; font-size: 16px; padding: 30px 50px 30px; font-weight: 600; padding-top: 75px">
+                        <p></br>Салон красоты по адресу ул. Амвросия Бучмы, 6 A –
                         первый салон сети семейных салонов красоты «Файно-Охайно».</p></br>
-                    <p>Философия наших заведений отражает идею того, что красота не требует жертв и много времени,
-                        поэтому своим клиентам мы предлагаем отличное качество услуг по честной цене. В «Файно-Охайно»
-                        особое внимание акцентируем на безупречный сервис, профессионализм специалистов и
-                        качество выполняемых услуг.
-                    </p></br>
-                    <p>Мы предлагаем широкий спектр: парикмахерских, косметологических услуг, ногтевого сервиса, массажных техник,
-                        депиляции, шугаринг, визаж, прокол ушей, работа с бровями и ресничками.</p></br>
-                    <p>Заботимся о Вас с особым вниманием и любовью!</p></br>
-                    <p>Ваша сеть салонов красоты «Файно-охайно».</p></br>
+                        <p>Философия наших заведений отражает идею того, что красота не требует жертв и много времени,
+                            поэтому своим клиентам мы предлагаем отличное качество услуг по честной цене. В «Файно-Охайно»
+                            особое внимание акцентируем на безупречный сервис, профессионализм специалистов и
+                            качество выполняемых услуг.
+                        </p></br>
+                        <p>Мы предлагаем широкий спектр: парикмахерских, косметологических услуг, ногтевого сервиса, массажных техник,
+                            депиляции, шугаринг, визаж, прокол ушей, работа с бровями и ресничками.</p></br>
+                        <p>Заботимся о Вас с особым вниманием и любовью!</p></br>
+                        <p>Ваша сеть салонов красоты «Файно-охайно».</p></br>
+                    </div>
+
                 </div>
-                <div class="col-md-5 col-xs-5 col-sm-5 col-lg-5" style="text-align: center; margin: 170px auto;">
-                        <div class="row">
-                            <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
-                                <img src="{% static 'image/mts-icon.png' %}" class="image-responsive" style="width: 32px; margin: 18px; margin-left: 125px">
-                                <img src="{% static 'image/kievstar-icon.png' %}" class="image-responsive" style="width: 32px; margin: -5px; margin-left: 125px">
-                            </div>
-                            <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
-                                <h1 style="font-size: 23px; color: darkolivegreen">+38 (066) 994 20 94</h1>
-                                <h1 style="font-size: 23px; color: darkolivegreen">+38 (097) 032 77 42</h1>
-                            <button type="button" style="width: 68%; padding: 0; margin-left: 50px; border: none;
-                               background: transparent;">
-                                <img src="{% static 'image/submit2_1.png' %}">
-                            </button>
-                            </div>
-                        </div>
+
+
+
+                <div class="col-md-4 col-xs-4 col-sm-4 col-lg-4" style="background-color: white; padding-top: 180px">
+
+                    <div style="margin: 10px">
+                        <span><img src="{% static 'image/mts-icon.png' %}" class="" style="width: 32px"><span style="font-size: 23px; color: darkolivegreen">+38 (066) 994 20 94</span></span>
+                    </div>
+                    <div style="margin: 10px">
+                        <span><img src="{% static 'image/kievstar-icon.png' %}" class="" style="width: 32px"><span style="font-size: 23px; color: darkolivegreen">+38 (066) 994 20 94</span></span>
+                    </div>
+
+                    <div style="margin: 10px;">
+                        <button class="button" style="padding: 0; border: none">
+                            <img src="{% static 'image/submit2_1.png' %}">
+                        </button>
+                    </div>
+
                 </div>
+
             </div>
         </div>
-        <div class="container">
+
+
+         <!-- container 2 -->
+        <div class="container 2">
             <div class="row">
-                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
-                    <img src="{% static 'image/wemen2.jpg' %}">
-                    <a name="top"></a>
+                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6" style="padding: 0">
+                   <img class="" width="570px" src="{% static 'image/wemen2.jpg' %}">
+                    <a name="1"></a>
                 </div>
-                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
-                    <p style="background-color: yellow">
-                        текс
-                    </p>
+                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6" style="padding: 0; background-color: #C3D05A">
+                    <div style="margin: 150px">
+                        <p style="color: white; font-weight: 700; font-size: 25px; text-align: center">ПАРИКМАХЕРСКИЕ УСЛУГИ / ЖЕНСКИЙ ЗАЛ</p>
+                    </div>
                 </div>
             </div>
         </div>
+
+
+
+   <!-- container 2-2 -->
+    <div class="container 2-2" style="">
+            <div class="row" style="">
+
+
+                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6" style="padding: 0; ">
+
+                    <div class="text-box" style="background-color: white; font-size: 16px; padding: 25px 50px 30px; font-weight: 600; padding-top: 75px">
+                        <p></br>Прекрасные девушки и дамы, обещаем, вы станете еще краше после работы наших специалистов</p></br>
+                        <p>Стрижка волос – определенно наша сильная сторона. В «Файно-Охайно» мы подберем идеальный вариант для вас –
+                            модную стрижку или классический образ. Также наши специалисты виртуозно выполняют укладку, выпрямление,
+                            окрашивание и ламинирование волос и моделирование бровей</p></br>
+                        <p>Мы готовы радовать вас каждый день и в дни особенных событий: повседневные стильные укладки и самые красивые —
+                            вечерние и свадебные — прически</p></br><br>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6" style="padding: 0; ">
+                    <div class="text-box" style="background-color: white; font-size: 16px; padding: 40px 50px 38px; font-weight: 600; padding-top: 93px">
+                        <p>ЖЕНСКАЯ СТРИЖКА С УКЛАДКОЙ . . . . . . . . . . . . от 200 грн</p><br>
+                        <p>УКЛАДКА ВОЛОС . . . . . . . . . . . . . . . . . . . . . . . . . . . .от 200 грн</p><br>
+                        <p>ОКРАШИВАНИЕ ВОЛОС . . . . . . . . . . . . . . . . . . . . . .  от 600 грн</p><br>
+                        <p>МЕЛИРОВАНИЕ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . от 500 грн</p><br>
+                        <p>БОТОКС ДЛЯ ВОЛОС . . . . . . . . . . . . . . . . . . . . . . . . . от 700 грн</p><br>
+                        <p>НАРАЩИВАНИЕ ВОЛОС . . . . . . . . . . . . . . . . . . . . . . от 1300 грн</p><br>
+                        <a style="padding-left: 130px;" href=""><img src="{% static 'image/all_services.jpg' %}" alt=""></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    <!-- container 3  -->
+        <div class="container 3">
+            <div class="row">
+                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6" style="padding: 0">
+                   <img class="" width="570px" src="{% static 'image/men1.jpg' %}">
+                    <a name="2"></a>
+                </div>
+                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6" style="padding: 0; background-color: #594861">
+                    <div style="margin: 150px">
+                        <p style="color: white; font-weight: 700; font-size: 25px; text-align: center">ПАРИКМАХЕРСКИЕ УСЛУГИ / МУЖСКОЙ ЗАЛ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- container 3-1 -->
+    <div class="container 3-1" style="">
+            <div class="row" style="">
+
+
+                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6" style="padding: 0; ">
+
+                    <div class="text-box" style="background-color: white; font-size: 16px; padding: 25px 50px 30px; font-weight: 600; padding-top: 75px">
+                        <p></br>Мужские прически – стрижки и стильные укладки — это основная услуга,
+                            которую мы предлагаем мужчинам в «Файно-Охайно». Стрижка ножницами или машинкой,
+                            короткие стрижки или стрижки на среднюю длину волос – наши опытные специалисты предложат
+                            подходящий вам вариант</p></br>
+                            <p></br>Мужская стрижка в «Файно-Охайно» – это всегда отличный результат за
+                            разумные деньги. Кроме этого, наши профессиональные специалисты смогут аккуратно выполнить мужской
+                            маникюр и мужской педикюр стерилизованным инструментом</p></br><br>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6" style="padding: 0; ">
+                    <div class="text-box" style="background-color: white; font-size: 16px; padding: 40px 50px 30px; font-weight: 600; padding-top: 93px">
+                        <br><br>
+                        <p>МУЖСКАЯ СТРИЖКА КЛАССИКА . . . . . . . . . . . . . . . от 150 грн</p><br>
+                        <p>МУЖСКАЯ СТРИЖКА НОЖНИЦАМИ . . . . . . . . . . . . от 200 грн</p><br>
+                        <p>МУЖСКАЯ СТРИЖКА МОДЕЛЬНАЯ . . . . . . . . . . . . . от 250 грн</p><br>
+                        <p>СТРИЖКА МУЖСКАЯ (ПЕНСИОНЕРЫ) . . . . . . . . . . . .от 100 грн</p><br>
+                        <p>ОКАНТОВКА УСОВ И БОРОДЫ . . . . . . . . . . . . . . . . . . от 100 грн</p><br><br><br>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- container 4  -->
+        <div class="container 4">
+            <div class="row">
+                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6" style="padding: 0">
+                   <img class="" width="570px" src="{% static 'image/kid1.jpg' %}">
+                    <a name="3"></a>
+                </div>
+                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6" style="padding: 0; background-color: #C3D05A">
+                    <div style="margin: 150px">
+                        <p style="color: white; font-weight: 700; font-size: 25px; text-align: center">ПАРИКМАХЕРСКИЕ УСЛУГИ / ДЕТСКИЙ ЗАЛ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- container 4-1 -->
+        <div class="container 4-1" style="">
+            <div class="row" style="">
+
+
+                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6" style="padding: 0; ">
+
+                    <div class="text-box" style="background-color: white; font-size: 16px; padding: 25px 50px 30px; font-weight: 600; padding-top: 75px">
+
+                        <p>В семейном салоне красоты «Файно-Охайно» мы, конечно, не оставим без внимания детей.
+                            В нашем салоне предусмотрены комфортные детские пуфы.</p></br>
+
+                        <p>При выполнении детской стрижки специалист
+                        уделит достаточно времени вашему малышу, чтобы он смог адаптироваться к новой обстановке,
+                        а в завершение визита мы подарим нашему маленькому гостю приятный </p></br>
+
+                        <p>Парикмахерские услуги для детей в «Файно-Охайно» включают детские стрижки,
+                        стрижку челки и кончиков, укладку волос, плетение кос и праздничные прически для девочек.
+                        Также у нас предусмотрена отдельная услуга – детский маникюр</p>
+
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6" style="padding: 0; ">
+                    <div class="text-box" style="background-color: white; font-size: 16px; padding: 40px 50px 30px; font-weight: 600; padding-top: 99px">
+                        <br><br>
+                        <p>ДЕТСКАЯ СТРИЖКА СТИЛИСТ . . . . . . . . . . . . . . . . . от 150 грн</p><br>
+                        <p>ДЕТСКАЯ СТРИЖКА ТОП-СТИЛИСТ . . . . . . . . . . . . от 200 грн</p><br>
+                        <p>ПРОКОЛ УШЕЙ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . от 250 грн</p><br><br><br><br><br><br>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- container 5  -->
+        <div class="container 5">
+            <div class="row">
+                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6" style="padding: 0">
+                   <img class="" width="570px" src="{% static 'image/manikur1.jpg' %}">
+                    <a name="4"></a>
+                </div>
+                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6" style="padding: 0; background-color: #594861">
+                    <div style="margin: 150px">
+                        <p style="color: white; font-weight: 700; font-size: 25px; text-align: center">МАНИКЮР / ПЕДИКЮР</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- container 5-1 -->
+        <div class="container 5-1" style="">
+            <div class="row" style="">
+
+
+                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6" style="padding: 0; ">
+
+                    <div class="text-box" style="background-color: white; font-size: 16px; padding: 25px 50px 30px; font-weight: 600; padding-top: 81px">
+                        <br>
+                        <p>В «Файно-Охайно» мы уделяем особое внимание стерилизации инструментов,
+                        предлагаем клиентам широкую палитру лаков и постоянно развиваем наш персонал,
+                        стремимся сократить потраченное вами время для получения качественных услуг!</p></br>
+                        <p>Аппаратный или обрезной маникюр и педикюр, долговременное, обычное покрытие или гель-лак –
+                        какую бы услугу вы ни выбрали, в «Файно-Охайно» вы можете быть уверены в безопасности процедуры и
+                        отличном результате по честной цене.</p></br>
+                        <a style="padding-left: 130px;" href=""><img src="{% static 'image/more_info.jpg' %}" alt=""></a>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6" style="padding: 0; ">
+                    <div class="text-box" style="background-color: white; font-size: 16px; padding: 40px 50px 30px; font-weight: 600; padding-top: 99px">
+                        <p>МАНИКЮР ЕВРОПЕЙСКИЙ, КЛАССИЧЕСКИЙ  . . . . .  от 100 грн</p><br>
+                        <p>ПОКРЫТИЕ НОГТЕЙ . . . . . . . . . . . . . . . . . . . . . . . . . . . .  от 200 грн</p><br>
+                        <p>ПЕДИКЮР МУЖСКОЙ . . . . . . . . . . . . . . . . . . . . . . . . . .  от 150 грн</p><br>
+                        <p>ПЕДИКЮР КЛАССИЧЕСКИЙ . . . . . . . . . . . . . . . . . . . . от 250 грн</p><br>
+                        <p>ПЕДИКЮР ДЕТСКИЙ . . . . . . . . . . . . . . . . . . . . . . . . . . . от 350 грн</p><br><br>
+                        <a style="padding-left: 130px;" href=""><img src="{% static 'image/all_services.jpg' %}" alt=""></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <!-- container 6  -->
+        <div class="container 6">
+            <div class="row">
+                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6" style="padding: 0">
+                   <img class="" width="570px" src="{% static 'image/brovi1.jpg' %}">
+                    <a name="5"></a>
+                </div>
+                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6" style="padding: 0; background-color: #594861">
+                    <div style="margin: 150px">
+                        <p style="color: white; font-weight: 700; font-size: 25px; text-align: center">БРОВИ И РЕСНИЧКИ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- container 7-1 -->
+        <div class="container 7-1" style="">
+            <div class="row" style="">
+
+
+                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6" style="padding: 0; ">
+
+                    <div class="text-box" style="background-color: white; font-size: 16px; padding: 25px 50px 30px; font-weight: 600; padding-top: 77px">
+                        <br>
+                        <p>В «Файно-Охайно» мы предлагаем высококлассные услуги архитектуры бровей и наращивания ресниц.
+                            Окрашивание бровей натуральной хной безопасно и естественно! Натуральный краситель не вызывает
+                            аллергический реакций. В отличие от обычной краски хна держится на коже и волосках в 2 раза дольше
+                            (4-5 недель). Брови и кожа во время окрашивания хной не подвергаются воздействию химии, которая
+                            содержится в стойкой краске!</p></br>
+                        <p>Наращивание ресниц в «Файно-Охайно» это выразительный взгляд в любой ситуации
+                            (вечеринка, бассейн, спорт зал , дождь, снег, жаркая погода);
+                            практичность и безопасность. Вам не нужно будет ежедневно тратить время на макияж.
+                            Кроме наращивание ресниц у профессионала исключает аллергические реакции и повреждение собственных ресниц.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6" style="padding: 0; ">
+                    <div class="text-box" style="background-color: white; font-size: 16px; padding: 40px 50px 30px; font-weight: 600; padding-top: 99px">
+                        <br><br><br>
+                        <p>НАРАЩИВАНИЕ РЕСНИЦ (КЛАССИКА)  . . . . . . . . . .  от 100 грн</p><br>
+                        <p>НАРАЩИВАНИЕ РЕСНИЦ . . . . . . . . . . . . . . . . . . . . . .  от 200 грн</p><br>
+                        <p>АРХИТЕКТУРА БРОВЕЙ . . . . . . . . . . . . . . . . . . . . . . . . . от 150 грн</p><br><br><br><br>
+                        <a style="padding-left: 130px;" href=""><img src="{% static 'image/all_services.jpg' %}" alt=""></a>
+                        <br><br>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <!-- container 7  -->
+        <div class="container 7">
+            <div class="row">
+                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6" style="padding: 0">
+                   <img class="" width="570px" src="{% static 'image/kosmet1.jpg' %}">
+                    <a name="6"></a>
+                </div>
+                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6" style="padding: 0; background-color: #C3D05A">
+                    <div style="margin: 150px">
+                        <p style="color: white; font-weight: 700; font-size: 25px; text-align: center">КОСМЕТОЛОГИЯ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- container 7-1 -->
+        <div class="container 7-1" style="">
+            <div class="row" style="">
+
+                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6" style="padding: 0; ">
+
+                    <div class="text-box" style="background-color: white; font-size: 16px; padding: 25px 50px 30px; font-weight: 600; padding-top: 77px">
+                        <br>
+                        <p>Косметологические процедуры в «Файно-Охайно» — это ваш ухоженный вешний вид и прекрасное настроение.
+                            У нас только опытные косметологи и качественная косметика от проверенных годами брендов –
+                            Holy Land, Jean D’estrees и Christina. Дополнительно предлагаем услуги по коррекции и окраске бровей,
+                            визаж и депиляцию</p></br></br></br></br></br></br></br></br></br>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6" style="padding: 0; ">
+                    <div class="text-box" style="background-color: white; font-size: 16px; padding: 40px 50px 30px; font-weight: 600; padding-top: 93px">
+
+                        <p>КАРБОКСИТЕРАПИЯ ЛИЦА  . . . . . . . . . . . . . . . . . . . .  от 100 грн</p><br>
+                        <p>ЧИСТКА ЛИЦА КОМБИНИРОВАННАЯ . . . . . . . . . . от 200 грн</p><br>
+                        <p>МОДЕЛИРОВАНИЕ ОВАЛА ЛИЦА (90 МИН) . . . . . от 150 грн</p><br>
+                        <p>КОЛЛАГЕНОВАЯ ЭКО-ТЕРАПИЯ (90 МИН) . . . . . . . от 150 грн</p><br>
+                        <p>МИНДАЛЬНЫЙ ПИЛИНГ (60 МИН) . . . . . . . . . . . . . от 150 грн</p><br>
+                        <br>
+                        <a style="padding-left: 130px;" href=""><img src="{% static 'image/all_services.jpg' %}" alt=""></a>
+                        <br><br>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- container 8-1  -->
+        <div class="container 8-1">
+            <div class="row">
+                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6" style="padding: 0">
+                   <img class="" width="570px" src="{% static 'image/massage1.jpg' %}">
+                    <a name="7"></a>
+                </div>
+                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6" style="padding: 0; background-color: #C3D05A">
+                    <div style="margin: 150px">
+                        <p style="color: white; font-weight: 700; font-size: 25px; text-align: center">МАССАЖ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- container 8-2 -->
+        <div class="container 8-2" style="">
+            <div class="row" style="">
+
+
+                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6" style="padding: 0; ">
+
+                    <div class="text-box" style="background-color: white; font-size: 16px; padding: 25px 50px 30px; font-weight: 600; padding-top: 67px">
+                        <br>
+                        <p>В «Файно-Охайно» мы предлагаем широкий выбор массажа различной продолжительности и направленности.
+                            Массажные процедуры выполняются опытными высококвалифицированными специалистами, которые владеют
+                            различными техниками массажа, применяя их в зависимости от задач, которые необходимо решить клиенту.
+                        </p>
+                        <br>
+                        <p>Грамотный массажист активизирует важные физические и биохимические реакции организма, которые
+                            стимулируют обмен веществ, способствуют выведению шлаков, снабжают ткани кислородом, восстанавливают
+                            гармональный баланс и, конечно, расслабляют мышечную систему, способствуя регенерации кожи.
+                        </p>
+
+                        </br></br>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6" style="padding: 0; ">
+                    <div class="text-box" style="background-color: white; font-size: 16px; padding: 40px 50px 30px; font-weight: 600; padding-top: 93px">
+
+                        <p>АНТИЦЕЛЛЮЛИТНЫЙ (40 МИН) . . . . . . . . . . . . . . . . от 100 грн</p><br>
+                        <p>МАССАЖ КЛАССИЧЕСКИЙ (90 МИН) . . . . . . . . . . . . . от 200 грн</p><br>
+                        <p>МАССАЖ ЛИМФОДРЕНАЖНЫЙ (30 МИН) . . . . . . . .  от 150 грн</p><br>
+                        <p>МАССАЖ СПИНЫ (30 МИН) . . . . . . . . . . . . . . . . . . . . . от 150 грн</p><br>
+                        <p>МАССАЖ ШЕЙНОЙ ЗОНЫ (15 МИН) . . . . . . . . . . . . . . от 150 грн</p><br>
+                        <br>
+                        <a style="padding-left: 130px;" href=""><img src="{% static 'image/all_services.jpg' %}" alt=""></a>
+                        <br><br>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- container 9-1  -->
+        <div class="container 9-1">
+            <div class="row">
+                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6" style="padding: 0">
+                   <img class="" width="570px" src="{% static 'image/depil1.jpg' %}">
+                    <a name="8"></a>
+                </div>
+                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6" style="padding: 0; background-color: #594861">
+                    <div style="margin: 150px">
+                        <p style="color: white; font-weight: 700; font-size: 25px; text-align: center">ДЕПИЛЯЦИЯ / ШУГАРИНГ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- container 9-2 -->
+        <div class="container 9-2" style="">
+            <div class="row" style="">
+
+
+                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6" style="padding: 0; ">
+
+                    <div class="text-box" style="background-color: white; font-size: 16px; padding: 25px 50px 30px; font-weight: 600; padding-top: 67px">
+                        <br>
+                        <p>В «Файно-Охайно» вы можете воспользоваться услугой восковой депиляции/шугаринга.</p>
+                        <br>
+                        <p>
+                            Депиляции это простая и доступная процедура, которая позволит вам на длительный период избавиться
+                            от лишних волосков и обрести идеально гладкую и нежную кожу. В нашем салоне вы можете удалить волосы
+                            посредством восковой депиляции или шугаринга на лице, в зоне бикини, подмышках, руках и ногах.
+                            Несмотря на то, что депиляции свойственна масса преимуществ, прибегать к ней не стоит, если у вас
+                            имеются противопоказания к этой процедуре, а именно: повреждения кожного покрова (раны, царапины,
+                            воспаления, папилломы, воспалительные процессы); варикозное расширение вен; беременность; эпилепсия;
+                            гипофилия; заболевания сердечно-сосудистой системы; сахарный диабет; проблемы со свертываемостью крови.
+
+                        </p>
+                        <br>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6" style="padding: 0; ">
+                    <div class="text-box" style="background-color: white; font-size: 16px; padding: 40px 50px 30px; font-weight: 600; padding-top: 83px">
+
+                        <p>БИКИНИ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . от 100 грн</p><br>
+                        <p>ГЛУБОКОЕ БИКИНИ . . . . . . . . . . . . . . . . . . . . от 200 грн</p><br>
+                        <p>ДЕПИЛЯЦИЯ НОГ ДО КОЛЕНА . . . . . . . . . .  от 150 грн</p><br>
+                        <p>ДЕПИЛЯЦИЯ ЛИЦА . . . . . . . . . . . . . . . . . . . . от 350 грн</p><br>
+                        <p>УСИКИ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . от 550 грн</p><br>
+                        <p>ЗОНА ПОДМЫШЕК . . . . . . . . . . . . . . . . . . . . . от 150 грн</p><br>
+                        <br>
+                        <a style="padding-left: 130px;" href=""><img src="{% static 'image/all_services.jpg' %}" alt=""></a>
+                        <br><br>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <br><br><br>
+
+
+       <!-- slider -->
+        <div class="container" style="padding: 0">
+        <div class="row-fluid">
+            <div class="col-md-12" style="background-color: white">
+                <div  class="" style="padding-right: 50px"></div>
+                <a name="9"></a>
+                <div class="page-header" style="">
+                    <h1  style="background-color: #765A85; color: white; text-align: center; border: solid #785A84; height: 70px; padding: 20px; margin-right: 350px; margin-left: 350px">НАШИ РАБОТЫ</h1>
+                </div>
+
+                <div class="carousel slide" id="myCarousel">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <ul class="thumbnails">
+                                <li class="col-md-3">
+                                    <div class="thumbnail">
+                                        <a href=""><img src="{% static 'image/4.jpg' %}" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="col-md-3">
+                                    <div class="thumbnail">
+                                        <a href=""><img src="{% static 'image/5.jpg' %}" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="col-md-3">
+                                    <div class="thumbnail">
+                                        <a href=""><img src="{% static 'image/6.jpg' %}" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="col-md-3">
+                                    <div class="thumbnail">
+                                        <a href=""><img src="{% static 'image/7.jpg' %}" alt=""></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div><!-- /Slide1 -->
+
+                        <div class="item">
+                           <ul class="thumbnails">
+                                <li class="col-md-3">
+                                    <div class="thumbnail">
+                                        <a href=""><img src="{% static 'image/8.jpg' %}" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="col-md-3">
+                                    <div class="thumbnail">
+                                        <a href=""><img src="{% static 'image/9.jpg' %}" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="col-md-3">
+                                    <div class="thumbnail">
+                                        <a href=""><img src="{% static 'image/10.jpg' %}" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="col-md-3">
+                                    <div class="thumbnail">
+                                        <a href=""><img src="{% static 'image/11.jpg' %}" alt=""></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div><!-- /Slide2 -->
+
+                        <div class="item">
+                             <ul class="thumbnails">
+                                <li class="col-md-3">
+                                    <div class="thumbnail">
+                                        <a href=""><img src="{% static 'image/12.jpg' %}" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="col-md-3">
+                                    <div class="thumbnail">
+                                        <a href=""><img src="{% static 'image/13.jpg' %}" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="col-md-3">
+                                    <div class="thumbnail">
+                                        <a href=""><img src="{% static 'image/14.jpg' %}" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="col-md-3">
+                                    <div class="thumbnail">
+                                        <a href=""><img src="{% static 'image/15.jpg' %}" alt=""></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div><!-- /Slide3 -->
+
+                    </div>
+
+                    <div>
+                        <a style="left: -40px;top: -10px;" class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a style="right: -80px;top: 0;" class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                            <span style="" class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div><!-- /#myCarousel -->
+            </div><!-- /.span12 -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+
+
+
+    <div class="container" style="">
+        <div class="row">
+            <div class="col-md-12" style="background-color: white">
+                <a name="10"></a>
+                <h1 style="padding: 50px"></h1>
+                <h1 style="position: absolute; top: 10px; left: 370px; background: #AFC308; padding: 20px 110px 20px; color: white">Карта Проезда</h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d162757.72582817764!2d30.392609300890783!3d50.40217023818373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1551902703212" width="1110" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="padding: 0; ">
+        <div class="row">
+            <div class="col-md-12">
+                <img style="width: 1140px" src="{% static 'image/footer.jpg' %}" alt="">
+                <a name="11"></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="{% static "js/script.js" %}"></script>  <!-- Новый путь-->
+
+    <style>
+
+
+
+/* Global carusel */
+a {
+    -webkit-transition: all 150ms ease;
+    -moz-transition: all 150ms ease;
+    -ms-transition: all 150ms ease;
+    -o-transition: all 150ms ease;
+    transition: all 150ms ease;
+    }
+    a:hover {
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */
+        filter: alpha(opacity=50); /* IE7 */
+        opacity: 0.6;
+        text-decoration: none;
+    }
+
+
+/* Container carusel */
+.container-fluid {
+    background: #FFFFFF;
+    margin: 40px auto 25px;
+    padding: 20px 1px 15px;
+    max-width: 755px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Page Header carusel (шапка) */
+.page-header {
+    background: #FFFFFF;
+    margin: -60px -15px 20px; /* верх,  право-лево, низ */
+    padding: 20px 30px;
+    border-top: 4px solid #ccc;
+
+    text-transform: uppercase;
+
+    }
+    .page-header h3 {
+        line-height: 0.88rem;
+        text-align: center;
+        color: orange;
+        }
+
+    .page-header p {
+        text-align: center;
+        color: grey;
+    }
+
+
+/* Carousel Control */
+    .control-box {
+    text-align: right;
+    width: 100%;
+    }
+    .carousel-control{
+
+        border: 0;
+        border-radius: 0;
+        display: inline-block;
+        font-size: 34px;
+        font-weight: 200;
+        line-height: 18px;
+        opacity: 1;
+        padding: 4px 10px 0;
+        position: absolute;
+        height: 30px;
+        width: 15px;
+        }
+
+    .item ul li {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+
+/* Mobile Only */
+@media (max-width: 767px) {
+    .page-header, .control-box {
+    text-align: center;
+    }
+}
+@media (max-width: 479px) {
+    .caption {
+    word-break: break-all;
+    }
+}
+
+.carousel-inner ul li p {
+    color: darkred;
+}
+
+.carousel-inner ul li h5 {
+    color: #65696D;
+}
+
+ .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='grey' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+ .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='grey' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+    </style>
+
     </body>
 </html>
 
