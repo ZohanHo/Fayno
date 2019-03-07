@@ -47,10 +47,15 @@
 
     <div style="height:100px;"></div>
 
-    <div class="container" style="height:100px; background-color: #785A84; top: 0; position: fixed; z-index: 5; left:  20%; right: 20% ">
+        <!-- The website is under cons  truction -->
+        <div style="position: absolute; top: 50px; left: 10px">
+            <img src="{% static 'image/under-construction.png' %}" alt="Сайт в разработке">
+        </div>
+
+    <div class="container" style="height:100px; background-color: #785A84; top: 0; position: fixed; z-index: 105; left:  20%; right: 20% ">
         <div style="" class="row">
             <div class="col-md-4 col-xs-4 col-sm-4 col-lg-4" style="">
-                <img class="logo" style="" src="{% static 'image/logo-fayno.png' %}"  >
+                <a name="1" href=""><img class="logo" style="" src="{% static 'image/logo-fayno.png' %}"  ></a>
             </div>
             <div style="" class="col-md-3 col-xs-3 col-sm-3 col-lg-3" >
                 <img class="logo2" style="" src="{% static 'image/logo-fayno2-2.png' %}" >
@@ -127,11 +132,11 @@
 
                         <!-- Навигация карусели (следующий или предыдущий слайд) -->
                         <!-- Кнопка, переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
-                        <a style="left: 10px;top: 150px;" class="left carousel-control" href="#testCarousel" role="button" data-slide="prev">
+                        <a style="" class="left carousel-control" href="#testCarousel" role="button" data-slide="prev">
                             <span class="glyphicon glyphicon-chevron-left"></span>
                         </a>
                         <!-- Кнопка, переход на следующий слайд с помощью атрибута data-slide="next" -->
-                        <a style="right: 10px;top: 180px;" class="right carousel-control" href="#testCarousel" role="button" data-slide="next">
+                        <a style="" class="right carousel-control" href="#testCarousel" role="button" data-slide="next">
                             <span class="glyphicon glyphicon-chevron-right"></span>
                         </a>
                     </div>
@@ -228,13 +233,19 @@
                         <p>МЕЛИРОВАНИЕ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . от 500 грн</p><br>
                         <p>БОТОКС ДЛЯ ВОЛОС . . . . . . . . . . . . . . . . . . . . . . . . . от 700 грн</p><br>
                         <p>НАРАЩИВАНИЕ ВОЛОС . . . . . . . . . . . . . . . . . . . . . . от 1300 грн</p><br>
-                        <a style="padding-left: 130px;" href=""><img src="{% static 'image/all_services.jpg' %}" alt=""></a>
+                        <div style="text-align: center">
+                            <button class="open_fast" style="padding: 0; border: none; " form=""><img style="" src="{% static 'image/all_services.jpg' %}" alt=""></button>
+                        </div>
+
+
                     </div>
                 </div>
 
             </div>
         </div>
 
+        <div style="" class="popup_fast"><img style="padding: 0"  width="700px" src="{% static "image/block2.png" %}" alt=""></div>
+        <div class="bg_popup" style=""></div>
 
     <!-- container 3  -->
         <div class="container 3">
@@ -382,7 +393,9 @@
                         <p>ПЕДИКЮР МУЖСКОЙ . . . . . . . . . . . . . . . . . . . . . . . . . .  от 150 грн</p><br>
                         <p>ПЕДИКЮР КЛАССИЧЕСКИЙ . . . . . . . . . . . . . . . . . . . . от 250 грн</p><br>
                         <p>ПЕДИКЮР ДЕТСКИЙ . . . . . . . . . . . . . . . . . . . . . . . . . . . от 350 грн</p><br><br>
-                        <a style="padding-left: 130px;" href=""><img src="{% static 'image/all_services.jpg' %}" alt=""></a>
+                         <div style="text-align: center">
+                            <button class="open_fast" style="padding: 0; border: none; " form=""><img style="" src="{% static 'image/all_services.jpg' %}" alt=""></button>
+                        </div>
                     </div>
                 </div>
 
@@ -435,8 +448,10 @@
                         <p>НАРАЩИВАНИЕ РЕСНИЦ (КЛАССИКА)  . . . . . . . . . .  от 100 грн</p><br>
                         <p>НАРАЩИВАНИЕ РЕСНИЦ . . . . . . . . . . . . . . . . . . . . . .  от 200 грн</p><br>
                         <p>АРХИТЕКТУРА БРОВЕЙ . . . . . . . . . . . . . . . . . . . . . . . . . от 150 грн</p><br><br><br><br>
-                        <a style="padding-left: 130px;" href=""><img src="{% static 'image/all_services.jpg' %}" alt=""></a>
-                        <br><br>
+                        <div style="text-align: center">
+                            <button class="open_fast" style="padding: 0; border: none; " form=""><img style="" src="{% static 'image/all_services.jpg' %}" alt=""></button>
+                        </div>
+                        <br>
                     </div>
                 </div>
 
@@ -485,8 +500,10 @@
                         <p>КОЛЛАГЕНОВАЯ ЭКО-ТЕРАПИЯ (90 МИН) . . . . . . . от 150 грн</p><br>
                         <p>МИНДАЛЬНЫЙ ПИЛИНГ (60 МИН) . . . . . . . . . . . . . от 150 грн</p><br>
                         <br>
-                        <a style="padding-left: 130px;" href=""><img src="{% static 'image/all_services.jpg' %}" alt=""></a>
-                        <br><br>
+                         <div style="text-align: center">
+                            <button class="open_fast" style="padding: 0; border: none; " form=""><img style="" src="{% static 'image/all_services.jpg' %}" alt=""></button>
+                        </div>
+                        <br>
                     </div>
                 </div>
 
@@ -542,8 +559,10 @@
                         <p>МАССАЖ СПИНЫ (30 МИН) . . . . . . . . . . . . . . . . . . . . . от 150 грн</p><br>
                         <p>МАССАЖ ШЕЙНОЙ ЗОНЫ (15 МИН) . . . . . . . . . . . . . . от 150 грн</p><br>
                         <br>
-                        <a style="padding-left: 130px;" href=""><img src="{% static 'image/all_services.jpg' %}" alt=""></a>
-                        <br><br>
+                         <div style="text-align: center">
+                            <button class="open_fast" style="padding: 0; border: none; " form=""><img style="" src="{% static 'image/all_services.jpg' %}" alt=""></button>
+                        </div>
+                        <br>
                     </div>
                 </div>
 
@@ -573,7 +592,7 @@
 
                 <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6" style="padding: 0; ">
 
-                    <div class="text-box" style="background-color: white; font-size: 16px; padding: 25px 50px 30px; font-weight: 600; padding-top: 67px">
+                    <div class="text-box" style="background-color: white; font-size: 16px; padding: 25px 50px 30px; font-weight: 600; padding-top: 77px">
                         <br>
                         <p>В «Файно-Охайно» вы можете воспользоваться услугой восковой депиляции/шугаринга.</p>
                         <br>
@@ -602,7 +621,9 @@
                         <p>УСИКИ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . от 550 грн</p><br>
                         <p>ЗОНА ПОДМЫШЕК . . . . . . . . . . . . . . . . . . . . . от 150 грн</p><br>
                         <br>
-                        <a style="padding-left: 130px;" href=""><img src="{% static 'image/all_services.jpg' %}" alt=""></a>
+                         <div style="text-align: center">
+                            <button class="open_fast" style="padding: 0; border: none; " form=""><img style="" src="{% static 'image/all_services.jpg' %}" alt=""></button>
+                        </div>
                         <br><br>
                     </div>
                 </div>
@@ -807,9 +828,9 @@ a {
         font-weight: 200;
         line-height: 18px;
         opacity: 1;
-        padding: 4px 10px 0;
+        padding: 112px 50px 285px;
         position: absolute;
-        height: 30px;
+        height: 50px;
         width: 15px;
         }
 
@@ -818,18 +839,6 @@ a {
     text-align: center;
 }
 
-
-/* Mobile Only */
-@media (max-width: 767px) {
-    .page-header, .control-box {
-    text-align: center;
-    }
-}
-@media (max-width: 479px) {
-    .caption {
-    word-break: break-all;
-    }
-}
 
 .carousel-inner ul li p {
     color: darkred;
@@ -848,6 +857,54 @@ a {
 }
 
     </style>
+
+<script>
+
+    $('.open_fast').click(function () { // Описуем что будет происходить по клику на кнопку с класом .open_fast
+
+        $('.popup_fast').css({"top": $(window).scrollTop() + 130}).addClass('active'); // ccs свойство top, проскроливать + 220
+        var bg_popup = $('.bg_popup');
+        bg_popup.fadeIn(); // fadeIn() - плавно появляется
+        bg_popup.click(function () {   // удаляем при нажати на на люьом месте кроме окна котрое появилось
+        $('.popup_fast').removeClass('active');
+        bg_popup.fadeOut();
+        });
+     });
+
+</script>
+
+
+<style>
+    .popup_fast {
+        text-align: center;
+        width: 700px;  /* ширина окна popup */
+        height: 790px; /* высота окна popup */
+        z-index: 100; /* поверх всех елементов на странице */
+        position: absolute;
+        top: 10%;
+        left: 0;
+        right: 0;
+        margin: auto; /* оцентровка по центру */
+        border: solid 1px grey;
+        display: none; /* изначально скрыт */
+        }
+
+    .popup_fast.active   {
+        display: block;
+        }
+
+    .bg_popup {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 99;
+        background: rgba(0, 0, 0, .3);
+        display: none;
+        }
+</style>
+
 
     </body>
 </html>
